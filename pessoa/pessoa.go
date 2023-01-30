@@ -1,21 +1,25 @@
 package pessoa
 
-type pessoa struct {
-	nome string
-	idade int
+import (
+	"fmt"
+)
 
+type pessoa struct {
+	nome  string
+	idade int
 }
+
 var p pessoa
 
-func Falar() string{
-       pessoas :=  p.nome
-       
-	return pessoas
+func Falar() {
 
-}
-func Idade() int {
+	fmt.Println("Qual e o seu nome?: ")
+	fmt.Scan(&p.nome)
 
-	idade := p.idade
-	return idade
+	fmt.Println("Qual e a sua Idade: ")
+	fmt.Scan(&p.idade)
+
+	fmt.Print("Hello World!\n")
+	fmt.Println("Eu sou o", p.nome, "tenho:", p.idade, "anos")
 
 }
