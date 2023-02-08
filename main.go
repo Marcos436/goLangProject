@@ -1,11 +1,14 @@
 package main
 
 import (
-	"newProject/pessoa"
+	"net/http"
+	
 )
 
 func main() {
 
-	pessoa.Falar()
+	http.ListenAndServe(":8000", nil)
+
+
 
 }
