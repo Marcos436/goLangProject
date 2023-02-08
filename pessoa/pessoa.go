@@ -2,6 +2,7 @@ package pessoa
 
 import (
 	"fmt"
+	
 )
 
 type pessoa struct {
@@ -12,6 +13,7 @@ type pessoa struct {
 var p pessoa
 
 func Falar() {
+
 
 	fmt.Println("Qual e o seu nome?: ")
 	fmt.Scan(&p.nome)
