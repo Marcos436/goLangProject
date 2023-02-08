@@ -1,11 +1,13 @@
 package main
 
 import (
-	"newProject/pessoa"
+	"net/http"
+	"newProject/Routes"
 )
 
 func main() {
 
-	pessoa.Falar()
+	routes.Routes()
+	http.ListenAndServe(":8000", nil)
 
 }
