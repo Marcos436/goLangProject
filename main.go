@@ -1,7 +1,7 @@
 package main
 
 import (
-	"newProject/pessoa"
+	pessoa "newProject/Models"
 )
 
 func main() {
